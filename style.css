@@ -68,3 +68,25 @@ li button {
 li button:hover {
   background-color: #d32f2f;
 }
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li span {
+  flex: 1;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
