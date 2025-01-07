@@ -9,10 +9,45 @@
 <body>
   <div class="container">
     <h1>To-Do List</h1>
-    <div class="input-container">
-      <input id="taskInput" type="text" placeholder="Yeni görev ekle">
+    
+    
+    <div>
+      <label for="filterSelect">Filtre:</label>
+      <select id="filterSelect">
+        <option value="All">Tümü</option>
+        <option value="Work">İş</option>
+        <option value="Personal">Kişisel</option>
+        <option value="Shopping">Alışveriş</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" id="taskInput" placeholder="Görev ekle...">
+      <select id="categorySelect">
+        <option value="">Kategori seç</option>
+        <option value="Work">İş</option>
+        <option value="Personal">Kişisel</option>
+        <option value="Shopping">Alışveriş</option>
+      </select>
+      <input type="date" id="deadlineInput">
       <button id="addTaskBtn">Ekle</button>
     </div>
+    
+    <div>
+      <label for="filterSelect">Filtre:</label>
+      <select id="filterSelect">
+        <option value="All">Tümü</option>
+        <option value="Work">İş</option>
+        <option value="Personal">Kişisel</option>
+        <option value="Shopping">Alışveriş</option>
+      </select>
+      <button id="clearCompletedBtn">Tamamlananları Temizle</button>
+    </div>
+    
+    <ul id="taskList"></ul>
+    
+    <ul id="taskList"></ul>
+    
+    
     <ul id="taskList"></ul>
   </div>
   <script src="app.js"></script>

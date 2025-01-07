@@ -55,6 +55,9 @@ li {
   margin-bottom: 5px;
   border-radius: 5px;
 }
+div {
+  margin-bottom: 15px;
+}
 
 li button {
   background-color: #f44336;
@@ -89,4 +92,18 @@ li span {
 li span.completed {
   text-decoration: line-through;
   color: gray;
+}
+div {
+  margin-bottom: 15px;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#taskList li button {
+  margin-left: 5px;
 }
